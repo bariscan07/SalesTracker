@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="8dp"
+    app:cardCornerRadius="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/customer_title"
+            style="@style/main_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:drawableStart="@drawable/ic_person_black_24dp"
+            android:drawableLeft="@drawable/ic_person_black_24dp"
+            android:drawablePadding="5dp"
+            android:text="Customer Title Here"/>
+
+        <TextView
+            android:id="@+id/customer_phoneNo"
+            style="@style/sub_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/customer_title"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:drawableStart="@drawable/ic_perm_phone_msg_black_24dp"
+            android:drawableLeft="@drawable/ic_perm_phone_msg_black_24dp"
+            android:drawablePadding="5dp"
+            android:text="Phone Number Here"/>
+
+        <TextView
+            android:id="@+id/customer_address"
+            style="@style/sub_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/customer_phoneNo"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:drawableStart="@drawable/ic_home_black_24dp"
+            android:drawableLeft="@drawable/ic_home_black_24dp"
+            android:drawablePadding="5dp"
+            android:text="Address here"/>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

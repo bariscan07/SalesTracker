@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".SaleDetailsActivity">
+
+    <include layout="@layout/card_view_sale" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description: "
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <TextView
+            android:id="@+id/sale_details_description"
+            style="@style/main_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Test" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product: "
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <TextView
+            android:id="@+id/sale_details_product_title"
+            style="@style/main_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Test" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/button_check_payed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mark as Payed" />
+
+    <Button
+        android:id="@+id/button_update_sale"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update Sale" />
+
+    <Button
+        android:id="@+id/send_SMS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SMS to Customer" />
+
+    <Button
+        android:id="@+id/button_delete_sale"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete Sale" />
+
+    <Button
+        android:id="@+id/button_generate_pdf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Generate Bıll" />
+
+
+</LinearLayout>
